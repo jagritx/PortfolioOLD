@@ -1,0 +1,166 @@
+$maincolor: #ffffff;
+$secondarycolor: #ababab;
+$interfacecolor: #000000;
+$callgray: #1d1d1d;
+$coolblue: #007aff;
+$coolgreen: #34c759;
+$navblur: rgba(0, 0, 0, 0.4);
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, Helvetica Neue, Helvetica,
+    sans-serif;
+  background-color: $interfacecolor;
+}
+
+h1 {
+  font-size: 4rem;
+  color: $maincolor;
+}
+h2 {
+  color: $secondarycolor;
+  font-size: 1.8rem;
+  font-weight: normal;
+}
+h3 {
+  font-weight: normal;
+  font-size: 2.45vw;
+}
+
+svg {
+  fill: #ffffff;
+  transition: 0.4s;
+}
+
+.headermain {
+  display: flex;
+  position: fixed;
+  width: 100%;
+  background-color: $navblur;
+  top: 0;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
+  font-size: 1.5rem;
+  backdrop-filter: saturate(180%) blur(20px);
+}
+.headername {
+  color: $maincolor;
+  text-decoration: none;
+  margin-left: 5%;
+}
+.headercontainer {
+  width: 550px;
+  margin-right: 5%;
+}
+.headerlist {
+  display: flex;
+  justify-content: space-between;
+  list-style: none;
+}
+
+.headeritem {
+  color: $maincolor;
+  padding-top: 12px;
+  padding-bottom: 12px;
+  padding-left: 25px;
+  padding-right: 25px;
+  text-decoration: none;
+  transition: 0.4s;
+  border-radius: 15px;
+}
+.headeritem:hover {
+  background-color: $coolblue;
+  color: white;
+  text-decoration: none;
+}
+
+.intro {
+  margin-top: 4.5%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-self: center;
+  line-height: 0.2;
+}
+
+.memoji {
+  width: 25%;
+  margin-top: -4%;
+}
+.description {
+  margin-top: -1.5%;
+}
+
+.pageview {
+  margin-top: 3.5%;
+  margin-left: 7%;
+  margin-right: 7%;
+  margin-bottom: 4.5%;
+  display: flex;
+  flex-direction: column;
+}
+
+.imessage {
+  background-color: $coolblue;
+  width: 100%;
+  height: 300px;
+  border-radius: 101px;
+  display: flex;
+  align-items: center;
+  margin-bottom: 5%;
+}
+.aboutinfo {
+  margin-left: 6.8rem;
+  margin-right: 6.8rem;
+  color: white;
+}
+.abouthighlight {
+  color: black;
+  font-weight: 300;
+}
+
+.socialcontainer {
+  display: flex;
+  justify-content: space-between;
+}
+.socialhandle {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 250px;
+  height: 90px;
+  background-color: $callgray;
+  border-radius: 13px;
+  padding-left: 20px;
+  padding-right: 30px;
+}
+.socialmedia {
+  display: flex;
+
+  align-items: center;
+}
+.socialicon {
+  width: 55px;
+}
+.socialinfo {
+  line-height: 0.5;
+  margin-left: 10px;
+}
+.socialapp {
+  color: $maincolor;
+}
+.socialdo {
+  color: $secondarycolor;
+}
+.socialbutton {
+  background-color: $coolgreen;
+  text-decoration: none;
+  color: $interfacecolor;
+  padding: 3% 6% 3% 6%;
+  border-radius: 100px;
+  transition: 0.4s;
+}
+
+.socialbutton:hover {
+  background-color: black;
+}
