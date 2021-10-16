@@ -152,9 +152,8 @@ svg {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
 }
@@ -407,10 +406,6 @@ svg {
       align-self: flex-start;
 }
 
-.socialbutton:hover {
-  background-color: black;
-}
-
 #jsimage {
   width: 12%;
   border-radius: 10px;
@@ -432,5 +427,143 @@ svg {
 
 .notification:hover {
   background-color: #ffffff;
+}
+
+.projectcontainer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.projectcard {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 355px;
+  height: 410px;
+  background-color: #fafafa;
+  border-radius: 34px;
+  padding-bottom: 5px;
+  margin-top: 12px;
+  margin-bottom: 12px;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+
+.projectimage {
+  width: 100%;
+  border-top-left-radius: 34px;
+  border-top-right-radius: 34px;
+}
+
+.projectdetails {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 85%;
+}
+
+.projectinfo {
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 100%;
+}
+
+.projectname {
+  font-weight: bold;
+  font-size: 22px;
+}
+
+.projectdes {
+  font-size: 12px;
+  margin-top: -8%;
+}
+
+.projectbutton {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: #007aff;
+  text-decoration: none;
+  font-weight: 600;
+  color: white;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  padding: 4% 6% 4% 6%;
+  border-radius: 30px;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+
+.projectbutton:hover {
+  background-color: #000000;
+  color: white;
+}
+
+.projectsep {
+  width: 78%;
+  height: 1px;
+  background-color: #7b7b7b;
+  opacity: 20%;
+  margin-top: 5px;
+  margin-bottom: 7px;
+}
+
+.languageinfo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-item-align: start;
+      align-self: flex-start;
+  margin-top: 10px;
+  margin-left: 20px;
+}
+
+.languageicon {
+  width: 50px;
+}
+
+.languagedes {
+  line-height: 0.3;
+  margin-left: 10px;
+}
+
+.built {
+  color: #7b7b7b;
+  font-weight: 500;
+  font-size: 11px;
+}
+
+.languagename {
+  color: #000000;
+  font-weight: 500;
+  font-size: 14px;
+}
+
+.skillprogress {
+  color: #7b7b7b;
+  margin-top: 4%;
+  -ms-flex-item-align: start;
+      align-self: flex-start;
 }
 /*# sourceMappingURL=styles.css.map */
