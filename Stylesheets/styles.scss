@@ -41,6 +41,7 @@ svg {
   text-align: center;
   font-size: 1.5rem;
   backdrop-filter: saturate(180%) blur(20px);
+  z-index: 20;
 }
 .headername {
   color: $maincolor;

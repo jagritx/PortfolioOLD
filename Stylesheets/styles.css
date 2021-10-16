@@ -42,6 +42,7 @@ svg {
   font-size: 1.5rem;
   -webkit-backdrop-filter: saturate(180%) blur(20px);
           backdrop-filter: saturate(180%) blur(20px);
+  z-index: 20;
 }
 
 .headername {
