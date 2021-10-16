@@ -155,6 +155,8 @@ svg {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 
 .socialhandle {
@@ -167,12 +169,14 @@ svg {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  width: 275px;
+  width: 215px;
   height: 90px;
   background-color: #1d1d1d;
   border-radius: 13px;
   padding-left: 20px;
   padding-right: 30px;
+  margin-top: 10px;
+  margin-bottom: 10px;
 }
 
 .socialmedia {
@@ -222,9 +226,9 @@ svg {
   width: -webkit-fit-content;
   width: -moz-fit-content;
   width: fit-content;
-  -webkit-box-pack: start;
-      -ms-flex-pack: start;
-          justify-content: flex-start;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -235,7 +239,7 @@ svg {
   padding-right: 10px;
   border-radius: 25px;
   margin-top: 50px;
-  margin-bottom: 50px;
+  margin-bottom: 80px;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
 }
@@ -251,8 +255,8 @@ svg {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  margin-left: 5px;
-  margin-right: 5px;
+  margin-left: 3px;
+  margin-right: 3px;
 }
 
 .docksquare {
@@ -268,11 +272,18 @@ svg {
   width: 75px;
   height: 75px;
   border-radius: 20px;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
 }
 
 .dockimage {
   height: 100%;
   width: 100%;
+}
+
+#arkitlogodock {
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 #reactlogodock {
@@ -322,5 +333,104 @@ svg {
   border-radius: 10px;
   margin-left: 5px;
   margin-right: 5px;
+}
+
+.docksquare:hover {
+  -webkit-filter: drop-shadow(0px 2px 3px #ababab);
+          filter: drop-shadow(0px 2px 3px #ababab);
+}
+
+.notificationcontainer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.notification {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 360px;
+  height: 65px;
+  background-color: #1d1d1d;
+  border-radius: 20px;
+  padding-left: 10px;
+  padding-right: 10px;
+  margin-top: 12px;
+  margin-bottom: 12px;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+
+.notificationinfo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.skillicon {
+  width: 50px;
+}
+
+.skillinfo {
+  line-height: 0.3;
+  margin-left: 10px;
+}
+
+.skillname {
+  color: #ffffff;
+  font-weight: 600;
+}
+
+.skilldetail {
+  color: #ffffff;
+}
+
+.skillprogress {
+  color: #ababab;
+  padding-top: 0%;
+  -ms-flex-item-align: start;
+      align-self: flex-start;
+}
+
+.socialbutton:hover {
+  background-color: black;
+}
+
+#jsimage {
+  width: 12%;
+  border-radius: 10px;
+  margin-left: 5px;
+}
+
+#leetimage {
+  width: 12%;
+  border-radius: 10px;
+  margin-left: 5px;
+  background-color: white;
+}
+
+#sfimage {
+  width: 12%;
+  border-radius: 10px;
+  margin-left: 5px;
+}
+
+.notification:hover {
+  background-color: #000000;
 }
 /*# sourceMappingURL=dark.css.map */
