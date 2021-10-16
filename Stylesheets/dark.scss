@@ -164,3 +164,79 @@ svg {
 .socialbutton:hover {
   background-color: black;
 }
+
+.dock {
+  display: flex;
+  width: fit-content;
+  justify-content: flex-start;
+  align-items: center;
+  background-color: $callgray;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 10px;
+  padding-right: 10px;
+  border-radius: 25px;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  flex-wrap: wrap;
+}
+.dockicon {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-left: 5px;
+  margin-right: 5px;
+}
+.docksquare {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 75px;
+  height: 75px;
+  border-radius: 20px;
+}
+.dockimage {
+  height: 100%;
+  width: 100%;
+}
+#reactlogodock {
+  height: 80%;
+  width: 80%;
+  border-radius: 15px;
+  object-fit: cover;
+}
+#djangologodock {
+  height: 80%;
+  width: 80%;
+  border-radius: 15px;
+}
+#htmllogodock {
+  height: 90%;
+  width: 90%;
+  border-radius: 15px;
+}
+#csslogodock {
+  height: 65%;
+  width: 57%;
+}
+#cpluspluslogodock {
+  height: 85%;
+  width: 85%;
+  background-color: white;
+  border-radius: 15px;
+}
+.dockdot {
+  width: 4px;
+  height: 4px;
+  background-color: $maincolor;
+  border-radius: 10px;
+}
+.dockseper {
+  width: 2px;
+  height: 50px;
+  background-color: $maincolor;
+  opacity: 20%;
+  border-radius: 10px;
+  margin-left: 5px;
+  margin-right: 5px;
+}
