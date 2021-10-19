@@ -804,4 +804,158 @@ html.transition *:after {
   -webkit-transition-delay: 0 !important;
           transition-delay: 0 !important;
 }
+
+@media only screen and (max-width: 810px) {
+  h1 {
+    font-size: 3rem;
+  }
+  h2 {
+    font-size: 1.5rem;
+  }
+  h3 {
+    font-size: 4vw;
+  }
+  .headermain {
+    margin-left: -2%;
+  }
+  .headeritem {
+    display: none;
+    padding-top: 14px;
+    padding-bottom: 14px;
+    padding-left: 9px;
+    padding-right: 9px;
+  }
+  .headername {
+    font-size: 4vw;
+    display: block;
+    width: 60%;
+    margin-left: 5%;
+  }
+  .intro {
+    margin-top: 30%;
+  }
+  #welcometext {
+    font-size: 3.8rem;
+  }
+  .memoji {
+    width: 65%;
+    margin-top: -4%;
+  }
+  .description {
+    margin-top: 5.5%;
+    margin-bottom: 25%;
+  }
+  .imessage {
+    width: 100%;
+    height: 250px;
+    border-radius: 75px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin-bottom: 5%;
+  }
+  .aboutinfo {
+    margin-left: 2.8rem;
+    margin-right: 2.8rem;
+    color: white;
+  }
+  .socialhandle {
+    width: 255px;
+    height: 70px;
+  }
+  .dock {
+    background-color: var(--interfacecolor);
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-left: 0px;
+    padding-right: 0px;
+    margin-left: -30px;
+    margin-right: -30px;
+    margin-top: -50px;
+  }
+  .dockicon {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    margin-left: -2px;
+    margin-right: -2px;
+  }
+  .docksquare {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    width: 65px;
+    height: 65px;
+    border-radius: 20px;
+    -webkit-transition: 0.4s;
+    transition: 0.4s;
+  }
+  .dockseper {
+    display: none;
+  }
+  .footeritem {
+    font-size: 10px;
+    color: var(--secondarycolor);
+    -webkit-transition: 0.4s;
+    transition: 0.4s;
+  }
+  .notificationcontainer {
+    margin-top: -70px;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .notification {
+    width: 100%;
+    height: 40%;
+  }
+  .skillicon {
+    width: 40px;
+    margin-right: 10px;
+  }
+  .skillname {
+    font-size: 3.6vw;
+  }
+  .skilldetail {
+    font-size: 3vw;
+  }
+  .skillprogress {
+    margin-top: 2.75%;
+    font-size: 3vw;
+  }
+  #jsimage {
+    width: 33px;
+    margin-left: 3px;
+  }
+  #leetimage {
+    width: 33px;
+    margin-left: 3px;
+  }
+  #sfimage {
+    width: 33px;
+  }
+  .projectcontainer {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+}
 /*# sourceMappingURL=styles.css.map */
