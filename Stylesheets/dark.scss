@@ -75,6 +75,68 @@ svg {
   color: white;
   text-decoration: none;
 }
+.togglecontainer{
+  display: flex;
+  margin-left: -10%;
+  margin-top: 1%;
+}
+#sunicon
+{
+  width:30%;
+  margin-left: -10%;
+  margin-right: 15%;
+}
+input[type=checkbox]{
+
+	height: 0;
+	width: 0;
+	visibility: hidden;
+  
+}
+
+label {
+  margin-top: 1.5%;
+	cursor: pointer;
+	text-indent: -9999px;
+	width: 45px;
+	height: 25px;
+	background: grey;
+	display: block;
+	border-radius: 25px;
+	position: relative;
+  transition: 0.5s;
+  
+}
+
+label:after {
+	content: '';
+	position: absolute;
+	top: 1px;
+	left: 1.5px;
+	width: 23px;
+	height: 23px;
+	background: #fff;
+	border-radius: 23px;
+transition: 0.5s;
+box-shadow: 0px 0.5px 2px 0px rgba(0,0,0,0.75);
+}
+
+input:checked + label {
+  
+	background: $coolgreen;
+}
+
+input:checked + label:after {
+	left: calc(100% - 1.5px);
+	transform: translateX(-100%);
+  
+}
+
+label:active:after {
+	width:30px;
+}
+
+
 
 .intro {
   margin-top: 4.5%;
@@ -526,3 +588,4 @@ height: 100%;
 
   color: $maincolor;
 }
+

@@ -1,10 +1,11 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme = "light">
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="./Stylesheets/dark.css" />
+    
+    <link rel="stylesheet" href="./Stylesheets/styles.css" />
     <title>Jagrit Kamra</title>
   </head>
   <body>
@@ -12,12 +13,16 @@
       <a href="#" class="headername headeritem">Jagrit Kamra</a>
       <nav class="headercontainer">
         <ul class="headerlist">
-          <li><a href="#" class="headeritem">Projects</a></li>
-          <li><a href="#" class="headeritem">Resume</a></li>
+          <li><a href="#projectpage" class="headeritem">Projects</a></li>
+          <li><a href="#resumepage" class="headeritem">Resume</a></li>
           <li>
-            <a href="#" class="headeritem">Resume</a>
+           <div class = "togglecontainer">
+            <img id = "sunicon" src = "/Assets/modeswitch.svg" alt="S"/>
+            <input type="checkbox" id="switch" name = "theme" checked /><label for="switch" >Toggle</label>
+          </div>
           </li>
         </ul>
+        
       </nav>
     </header>
 
@@ -355,8 +360,8 @@
         </div>
       </div>
     </section>
-    <section class="pageview">
-      <h1>Projects</h1>
+    <section id = "projectpage" class="pageview">
+      <h1 id = "projectheader">Projects</h1>
 
       <div class="projectcontainer">
         <div class="projectcard">
@@ -442,7 +447,7 @@
         </div>
       </div>
     </section>
-    <section class="pageview">
+    <section id = "resumepage" class="pageview">
       <h1>Download Resume</h1>
       <div class = "downloadcontainer">
         
@@ -457,10 +462,11 @@
     
     </section>
     <footer class="footermain">
-      <p class="footeritem">Designed by Jagrit in Delhi</p>
+      <p class="footeritem">Designed by Jagrit K.©</p>
       <p class="footeritem">2021</p>
       <p class="footeritem">jagritkamra1@gmail.com</p>
     </footer>
-
+    <script src="/theme.js">
+    </script>
   </body>
 </html>
