@@ -412,3 +412,72 @@ svg {
   margin-top: 4%;
   align-self: flex-start;
 }
+.downloadcontainer{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  row-gap: 30px;
+}
+.graymarker{
+  background-color: $navblur;
+  color:$secondarycolor;
+}
+
+.optext{
+  color: $secondarycolor;
+  background-color: $callgray;
+  padding-top: 9px;
+  padding-bottom: 9px;
+  padding-left: 15%;
+  padding-right: 15%;
+  text-decoration: none;
+  border-radius: 10px;
+}
+.bluedownloadbutton{
+  color: white;
+  font-size: 35px;
+  background-color: $coolblue;
+  padding-top: 27px;
+  padding-bottom: 27px;
+  padding-left: 27%;
+  padding-right: 27%;
+  text-decoration: none;
+  transition: 0.4s;
+  border-radius: 35px;
+}
+.bluedownloadbutton:hover{
+  background-color: black;
+}
+.emailme{
+  color:$secondarycolor;
+  text-decoration: none;
+  font-size: 20px;
+  transition:0.4s;
+}
+.emailme:hover{
+  color:$maincolor;
+}
+.whitedownloadbutton{
+  color: $secondarycolor;
+  font-size: 35px;
+  background-color: white;
+  padding-top: 27px;
+  padding-bottom: 27px;
+  padding-left: 27%;
+  padding-right: 27%;
+  text-decoration: none;
+  transition: 0.4s;
+  border-radius: 35px;
+
+  box-shadow: 0px 0px 1px 0px rgba(0,0,0,0.75);
+}
+.whitedownloadbutton:hover{
+  background-color: black;
+  color:white;
+}
+.seperator{
+  height:3px;
+  width: 90%;
+  background-color: $secondarycolor;
+  margin-top: 25px;
+}

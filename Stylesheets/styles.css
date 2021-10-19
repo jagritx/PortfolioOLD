@@ -566,4 +566,92 @@ svg {
   -ms-flex-item-align: start;
       align-self: flex-start;
 }
+
+.downloadcontainer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  row-gap: 30px;
+}
+
+.graymarker {
+  background-color: rgba(255, 255, 255, 0.4);
+  color: #7b7b7b;
+}
+
+.optext {
+  color: #7b7b7b;
+  background-color: #fafafa;
+  padding-top: 9px;
+  padding-bottom: 9px;
+  padding-left: 15%;
+  padding-right: 15%;
+  text-decoration: none;
+  border-radius: 10px;
+}
+
+.bluedownloadbutton {
+  color: white;
+  font-size: 35px;
+  background-color: #007aff;
+  padding-top: 27px;
+  padding-bottom: 27px;
+  padding-left: 27%;
+  padding-right: 27%;
+  text-decoration: none;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+  border-radius: 35px;
+}
+
+.bluedownloadbutton:hover {
+  background-color: black;
+}
+
+.emailme {
+  color: #7b7b7b;
+  text-decoration: none;
+  font-size: 20px;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+
+.emailme:hover {
+  color: #000000;
+}
+
+.whitedownloadbutton {
+  color: #7b7b7b;
+  font-size: 35px;
+  background-color: white;
+  padding-top: 27px;
+  padding-bottom: 27px;
+  padding-left: 27%;
+  padding-right: 27%;
+  text-decoration: none;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+  border-radius: 35px;
+  -webkit-box-shadow: 0px 0px 1px 0px rgba(0, 0, 0, 0.75);
+          box-shadow: 0px 0px 1px 0px rgba(0, 0, 0, 0.75);
+}
+
+.whitedownloadbutton:hover {
+  background-color: black;
+  color: white;
+}
+
+.seperator {
+  height: 3px;
+  width: 90%;
+  background-color: #7b7b7b;
+  margin-top: 25px;
+}
 /*# sourceMappingURL=styles.css.map */
