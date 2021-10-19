@@ -342,6 +342,7 @@ input:checked + label:after {
   margin-top: 12px;
   margin-bottom: 12px;
   transition: 0.4s;
+  cursor: default;
 }
 
 .notificationinfo {
@@ -499,8 +500,8 @@ height: 100%;
   align-self: flex-start;
 }
 #cpluspluslogoproject{
-  width:12%;
-  height: 90%;
+  width:40px;
+  height: 40px;
   border-radius: 10px;
   background-color: white;
 }
@@ -529,6 +530,7 @@ height: 100%;
 .optext:hover{
   background-color: var(--coolgreen);
   color:green;
+  cursor: default;
 }
 .bluedownloadbutton{
   color: white;
@@ -554,7 +556,7 @@ height: 100%;
 }
 .emailme:hover{
   color:var(--coolgreen);
-  
+  cursor: default;
 }
 .whitedownloadbutton{
   color: var(--maincolor);
@@ -573,6 +575,7 @@ height: 100%;
 .whitedownloadbutton:hover{
   background-color: var(--maincolor);
   color:var(--interfacecolor);
+
 }
 .seperator{
   height:5px;
@@ -597,6 +600,7 @@ height: 100%;
 .footeritem:hover
 {
   color: var(--maincolor);
+  cursor: default;
 }
 
 html.transition,
