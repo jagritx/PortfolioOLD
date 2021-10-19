@@ -4,12 +4,13 @@ $interfacecolor: #000000;
 $callgray: #1d1d1d;
 $coolblue: #007aff;
 $coolgreen: #34c759;
+$secondarylight:#242424;
 $navblur: rgba(0, 0, 0, 0.4);
 
 body {
   font-family: -apple-system, BlinkMacSystemFont, Helvetica Neue, Helvetica,
     sans-serif;
-  background-color: $interfacecolor;
+    background-color: $interfacecolor;
 }
 
 h1 {
@@ -42,6 +43,7 @@ svg {
   text-align: center;
   font-size: 1.5rem;
   backdrop-filter: saturate(180%) blur(20px);
+  z-index: 20;
 }
 .headername {
   color: $maincolor;
@@ -121,14 +123,14 @@ svg {
 
 .socialcontainer {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   flex-wrap: wrap;
 }
 .socialhandle {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  width: 215px;
+  width: 255px;
   height: 90px;
   background-color: $callgray;
   border-radius: 13px;
@@ -292,13 +294,10 @@ svg {
 }
 .skillprogress {
   color: $secondarycolor;
-  padding-top: 0%;
+  margin-top: 4%;
   align-self: flex-start;
 }
 
-.socialbutton:hover {
-  background-color: black;
-}
 #jsimage {
   width: 12%;
   border-radius: 10px;
@@ -317,4 +316,213 @@ svg {
 }
 .notification:hover {
   background-color: $interfacecolor;
+}
+.projectcontainer {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.projectcard {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  width: 355px;
+  height: 410px;
+  background-color: $callgray;
+  border-radius: 34px;
+  padding-bottom: 5px;
+  margin-top: 12px;
+  margin-bottom: 12px;
+  transition: 0.4s;
+  box-shadow: 0px 0px 1px 0px rgba(0,0,0,0.2);
+}
+
+.projectimage {
+  width: 100%;
+  border-top-left-radius: 34px;
+  border-top-right-radius: 34px;
+}
+#prokioskimage{
+height: 100%;
+  object-fit: cover;
+}
+#dsalgoimage{
+  height: 59%;
+  object-fit: cover;
+}
+
+.projectdetails {
+  display: flex;
+  width: 85%;
+}
+.projectinfo {
+  align-items: flex-start;
+  justify-content: center;
+  width: 100%;
+}
+.projectname {
+  font-weight: bold;
+  font-size: 22px;
+  color:$maincolor;
+}
+.projectdes {
+  font-size: 12px;
+  margin-top: -8%;
+  color:$maincolor;
+}
+
+.projectbutton {
+  align-items: center;
+  background-color: $coolblue;
+  text-decoration: none;
+  font-weight: 600;
+  color: white;
+  align-self: center;
+  padding: 4% 6% 4% 6%;
+  border-radius: 30px;
+  transition: 0.4s;
+}
+.projectbutton:hover {
+  background-color: black;
+  color: white;
+}
+.projectsep {
+  width: 78%;
+  height: 1px;
+  background-color: $secondarycolor;
+  opacity: 20%;
+  margin-top: 5px;
+  margin-bottom: 7px;
+}
+
+.languageinfo {
+  display: flex;
+  align-items: center;
+  align-self: flex-start;
+  margin-top: 10px;
+  margin-left: 20px;
+}
+.languageicon {
+  width: 50px;
+}
+.languagedes {
+  line-height: 0.3;
+  margin-left: 10px;
+}
+.built {
+  color: $secondarycolor;
+  font-weight: 500;
+  font-size: 11px;
+}
+.languagename {
+  color: $maincolor;
+  font-weight: 500;
+  font-size: 14px;
+}
+.skillprogress {
+  color: $secondarycolor;
+  margin-top: 4%;
+  align-self: flex-start;
+}
+#cpluspluslogoproject{
+  width:12%;
+  height: 90%;
+  border-radius: 10px;
+  background-color: white;
+}
+.downloadcontainer{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  row-gap: 30px;
+}
+.graymarker{
+  background-color: $navblur;
+  color:$secondarycolor;
+}
+
+.optext{
+  color: $secondarycolor;
+  background-color: $secondarylight;
+  padding-top: 9px;
+  padding-bottom: 9px;
+  padding-left: 15%;
+  padding-right: 15%;
+  text-decoration: none;
+  border-radius: 10px;
+  transition:0.4s;
+}
+.optext:hover{
+  background-color: $coolgreen;
+  color:green;
+}
+.bluedownloadbutton{
+  color: white;
+  font-size: 35px;
+  background-color: $coolblue;
+  padding-top: 27px;
+  padding-bottom: 27px;
+  padding-left: 27%;
+  padding-right: 27%;
+  text-decoration: none;
+  transition: 0.4s;
+  border-radius: 35px;
+}
+.bluedownloadbutton:hover{
+  background-color: $maincolor;
+  color:$interfacecolor;
+}
+.emailme{
+  color:$secondarycolor;
+  text-decoration: none;
+  font-size: 20px;
+  transition:0.4s;
+}
+.emailme:hover{
+  color:$coolgreen;
+  
+}
+.whitedownloadbutton{
+  color: $maincolor;
+  font-size: 35px;
+  background-color: $callgray;
+  padding-top: 27px;
+  padding-bottom: 27px;
+  padding-left: 27%;
+  padding-right: 27%;
+  text-decoration: none;
+  transition: 0.4s;
+  border-radius: 35px;
+
+  box-shadow: 0px 0px 2px 0px rgba(0,0,0,0.75);
+}
+.whitedownloadbutton:hover{
+  background-color: $maincolor;
+  color:$interfacecolor;
+}
+.seperator{
+  height:5px;
+  width: 100%;
+  background-color: $secondarylight;
+  margin-top: 25px;
+  border-radius: 20px;
+}
+.footermain{
+  margin-top: -6%;
+  margin-left: 7%;
+  margin-right: 7%;
+  display: flex;
+  justify-content: space-between;
+}
+.footeritem
+{
+  font-size: 25px;
+  color: $secondarycolor;
+  transition:0.4s;
+}
+.footeritem:hover
+{
+
+  color: $maincolor;
 }

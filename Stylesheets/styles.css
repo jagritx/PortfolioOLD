@@ -1,9 +1,11 @@
 body {
   font-family: -apple-system, BlinkMacSystemFont, Helvetica Neue, Helvetica, sans-serif;
+  background-color: #ffffff;
 }
 
 h1 {
   font-size: 4rem;
+  color: #000000;
 }
 
 h2 {
@@ -13,7 +15,6 @@ h2 {
 }
 
 h3 {
-  color: #ffffff;
   font-weight: normal;
   font-size: 2.45vw;
 }
@@ -460,12 +461,26 @@ svg {
   margin-bottom: 12px;
   -webkit-transition: 0.4s;
   transition: 0.4s;
+  -webkit-box-shadow: 0px 0px 1px 0px rgba(0, 0, 0, 0.2);
+          box-shadow: 0px 0px 1px 0px rgba(0, 0, 0, 0.2);
 }
 
 .projectimage {
   width: 100%;
   border-top-left-radius: 34px;
   border-top-right-radius: 34px;
+}
+
+#prokioskimage {
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+#dsalgoimage {
+  height: 59%;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 .projectdetails {
@@ -488,11 +503,13 @@ svg {
 .projectname {
   font-weight: bold;
   font-size: 22px;
+  color: #000000;
 }
 
 .projectdes {
   font-size: 12px;
   margin-top: -8%;
+  color: #000000;
 }
 
 .projectbutton {
@@ -513,7 +530,7 @@ svg {
 }
 
 .projectbutton:hover {
-  background-color: #000000;
+  background-color: black;
   color: white;
 }
 
@@ -567,6 +584,13 @@ svg {
       align-self: flex-start;
 }
 
+#cpluspluslogoproject {
+  width: 12%;
+  height: 90%;
+  border-radius: 10px;
+  background-color: white;
+}
+
 .downloadcontainer {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -588,13 +612,20 @@ svg {
 
 .optext {
   color: #7b7b7b;
-  background-color: #fafafa;
+  background-color: #E5E5E5;
   padding-top: 9px;
   padding-bottom: 9px;
   padding-left: 15%;
   padding-right: 15%;
   text-decoration: none;
   border-radius: 10px;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+
+.optext:hover {
+  background-color: #34c759;
+  color: green;
 }
 
 .bluedownloadbutton {
@@ -612,7 +643,8 @@ svg {
 }
 
 .bluedownloadbutton:hover {
-  background-color: black;
+  background-color: #000000;
+  color: #ffffff;
 }
 
 .emailme {
@@ -624,13 +656,13 @@ svg {
 }
 
 .emailme:hover {
-  color: #000000;
+  color: #34c759;
 }
 
 .whitedownloadbutton {
-  color: #7b7b7b;
+  color: #000000;
   font-size: 35px;
-  background-color: white;
+  background-color: #fafafa;
   padding-top: 27px;
   padding-bottom: 27px;
   padding-left: 27%;
@@ -639,20 +671,21 @@ svg {
   -webkit-transition: 0.4s;
   transition: 0.4s;
   border-radius: 35px;
-  -webkit-box-shadow: 0px 0px 1px 0px rgba(0, 0, 0, 0.75);
-          box-shadow: 0px 0px 1px 0px rgba(0, 0, 0, 0.75);
+  -webkit-box-shadow: 0px 0px 2px 0px rgba(0, 0, 0, 0.75);
+          box-shadow: 0px 0px 2px 0px rgba(0, 0, 0, 0.75);
 }
 
 .whitedownloadbutton:hover {
-  background-color: black;
-  color: white;
+  background-color: #000000;
+  color: #ffffff;
 }
 
 .seperator {
   height: 5px;
   width: 100%;
-  background-color: #7b7b7b;
+  background-color: #E5E5E5;
   margin-top: 25px;
+  border-radius: 20px;
 }
 
 .footermain {
@@ -670,5 +703,11 @@ svg {
 .footeritem {
   font-size: 25px;
   color: #7b7b7b;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+
+.footeritem:hover {
+  color: #000000;
 }
 /*# sourceMappingURL=styles.css.map */

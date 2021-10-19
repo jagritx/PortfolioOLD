@@ -4,15 +4,18 @@ $interfacecolor: #ffffff;
 $callgray: #fafafa;
 $coolblue: #007aff;
 $coolgreen: #34c759;
+$secondarylight:#E5E5E5;
 $navblur: rgba(255, 255, 255, 0.4);
 
 body {
   font-family: -apple-system, BlinkMacSystemFont, Helvetica Neue, Helvetica,
     sans-serif;
+    background-color: $interfacecolor;
 }
 
 h1 {
   font-size: 4rem;
+  color: $maincolor;
 }
 h2 {
   color: $secondarycolor;
@@ -20,7 +23,6 @@ h2 {
   font-weight: normal;
 }
 h3 {
-  color: $interfacecolor;
   font-weight: normal;
   font-size: 2.45vw;
 }
@@ -333,12 +335,21 @@ svg {
   margin-top: 12px;
   margin-bottom: 12px;
   transition: 0.4s;
+  box-shadow: 0px 0px 1px 0px rgba(0,0,0,0.2);
 }
 
 .projectimage {
   width: 100%;
   border-top-left-radius: 34px;
   border-top-right-radius: 34px;
+}
+#prokioskimage{
+height: 100%;
+  object-fit: cover;
+}
+#dsalgoimage{
+  height: 59%;
+  object-fit: cover;
 }
 
 .projectdetails {
@@ -353,10 +364,12 @@ svg {
 .projectname {
   font-weight: bold;
   font-size: 22px;
+  color:$maincolor;
 }
 .projectdes {
   font-size: 12px;
   margin-top: -8%;
+  color:$maincolor;
 }
 
 .projectbutton {
@@ -371,7 +384,7 @@ svg {
   transition: 0.4s;
 }
 .projectbutton:hover {
-  background-color: $maincolor;
+  background-color: black;
   color: white;
 }
 .projectsep {
@@ -412,6 +425,12 @@ svg {
   margin-top: 4%;
   align-self: flex-start;
 }
+#cpluspluslogoproject{
+  width:12%;
+  height: 90%;
+  border-radius: 10px;
+  background-color: white;
+}
 .downloadcontainer{
   display: flex;
   flex-direction: column;
@@ -425,13 +444,18 @@ svg {
 
 .optext{
   color: $secondarycolor;
-  background-color: $callgray;
+  background-color: $secondarylight;
   padding-top: 9px;
   padding-bottom: 9px;
   padding-left: 15%;
   padding-right: 15%;
   text-decoration: none;
   border-radius: 10px;
+  transition:0.4s;
+}
+.optext:hover{
+  background-color: $coolgreen;
+  color:green;
 }
 .bluedownloadbutton{
   color: white;
@@ -446,7 +470,8 @@ svg {
   border-radius: 35px;
 }
 .bluedownloadbutton:hover{
-  background-color: black;
+  background-color: $maincolor;
+  color:$interfacecolor;
 }
 .emailme{
   color:$secondarycolor;
@@ -455,12 +480,13 @@ svg {
   transition:0.4s;
 }
 .emailme:hover{
-  color:$maincolor;
+  color:$coolgreen;
+  
 }
 .whitedownloadbutton{
-  color: $secondarycolor;
+  color: $maincolor;
   font-size: 35px;
-  background-color: white;
+  background-color: $callgray;
   padding-top: 27px;
   padding-bottom: 27px;
   padding-left: 27%;
@@ -469,17 +495,18 @@ svg {
   transition: 0.4s;
   border-radius: 35px;
 
-  box-shadow: 0px 0px 1px 0px rgba(0,0,0,0.75);
+  box-shadow: 0px 0px 2px 0px rgba(0,0,0,0.75);
 }
 .whitedownloadbutton:hover{
-  background-color: black;
-  color:white;
+  background-color: $maincolor;
+  color:$interfacecolor;
 }
 .seperator{
   height:5px;
   width: 100%;
-  background-color: $secondarycolor;
+  background-color: $secondarylight;
   margin-top: 25px;
+  border-radius: 20px;
 }
 .footermain{
   margin-top: -6%;
@@ -492,4 +519,10 @@ svg {
 {
   font-size: 25px;
   color: $secondarycolor;
+  transition:0.4s;
+}
+.footeritem:hover
+{
+
+  color: $maincolor;
 }
