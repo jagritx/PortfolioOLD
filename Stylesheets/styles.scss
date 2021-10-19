@@ -702,12 +702,7 @@ html.transition *:after {
   .dockseper {
     display: none;
   }
-  .footeritem
-{
-  font-size: 10px;
-  color: var(--secondarycolor);
-  transition:0.4s;
-}
+ 
 .notificationcontainer {
   margin-top: -70px;
   justify-content: center;
@@ -744,5 +739,23 @@ html.transition *:after {
 .projectcontainer {
   justify-content: center;
 }
+.bluedownloadbutton{
+  border-radius: 30px;
+  font-size: 25px;
+  margin-bottom: -30px;
+}
+.whitedownloadbutton{
+  border-radius: 30px;
+  font-size: 25px;
+  margin-top: -30px;
+}
+.seperator{
+  height:3px;
+  margin-top: 25px;
 
+}
+.footeritem
+{
+  font-size: 10px;
+}
 }

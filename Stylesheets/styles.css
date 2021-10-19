@@ -911,12 +911,6 @@ html.transition *:after {
   .dockseper {
     display: none;
   }
-  .footeritem {
-    font-size: 10px;
-    color: var(--secondarycolor);
-    -webkit-transition: 0.4s;
-    transition: 0.4s;
-  }
   .notificationcontainer {
     margin-top: -70px;
     -webkit-box-pack: center;
@@ -956,6 +950,23 @@ html.transition *:after {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
+  }
+  .bluedownloadbutton {
+    border-radius: 30px;
+    font-size: 25px;
+    margin-bottom: -30px;
+  }
+  .whitedownloadbutton {
+    border-radius: 30px;
+    font-size: 25px;
+    margin-top: -30px;
+  }
+  .seperator {
+    height: 3px;
+    margin-top: 25px;
+  }
+  .footeritem {
+    font-size: 10px;
   }
 }
 /*# sourceMappingURL=styles.css.map */
