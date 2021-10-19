@@ -128,7 +128,7 @@ svg {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  width: 215px;
+  width: 255px;
   height: 90px;
   background-color: $callgray;
   border-radius: 13px;
@@ -476,8 +476,20 @@ svg {
   color:white;
 }
 .seperator{
-  height:3px;
-  width: 90%;
+  height:5px;
+  width: 100%;
   background-color: $secondarycolor;
   margin-top: 25px;
+}
+.footermain{
+  margin-top: -6%;
+  margin-left: 7%;
+  margin-right: 7%;
+  display: flex;
+  justify-content: space-between;
+}
+.footeritem
+{
+  font-size: 25px;
+  color: $secondarycolor;
 }
