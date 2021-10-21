@@ -28,20 +28,28 @@ body {
 h1 {
   font-size: 4rem;
   color: var(--maincolor);
+  transition: 0.4s;
+}
+h1:hover{
+  opacity: 0.7;
 }
 h2 {
   color: var(--secondarycolor);
   font-size: 1.8rem;
   font-weight: normal;
+  transition: 0.4s;
+}
+h2:hover{
+  color: var(--coolblue);
 }
 h3 {
   font-weight: normal;
   font-size: 2.45vw;
 }
 
-svg {
-  fill: #ffffff;
-  transition: 0.4s;
+svg
+{
+  fill: green;
 }
 
 .headermain {
@@ -232,11 +240,12 @@ input:checked + label:after {
   color: var(--interfacecolor);
   padding: 3% 6% 3% 6%;
   border-radius: 100px;
-  transition: 0.4s;
+  transition: 0.8s;
 }
 
 .socialbutton:hover {
-  background-color: black;
+  opacity: 0.7;
+ 
 }
 
 .dock {
@@ -403,13 +412,13 @@ input:checked + label:after {
 
   width: 355px;
   height: 410px;
-  background-color: var(--callgray);
+  background-color: var(--interfacecolor);
   border-radius: 34px;
   padding-bottom: 5px;
   margin-top: 12px;
   margin-bottom: 12px;
   transition: 0.4s;
-  box-shadow: 0px 0px 1px 0px rgba(0,0,0,0.2);
+  box-shadow: 0px 0px 5px 0px var(--secondarylight);
 }
 
 .projectimage {
@@ -441,9 +450,11 @@ height: 100%;
   color:var(--maincolor);
 }
 .projectdes {
+  color: var(--secondarycolor);
   font-size: 12px;
+  font-weight: 600;
   margin-top: -8%;
-  color:var(--maincolor);
+
 }
 
 .projectbutton {
@@ -458,16 +469,7 @@ height: 100%;
   transition: 0.4s;
 }
 .projectbutton:hover {
-  background-color: black;
-  color: white;
-}
-.projectsep {
-  width: 78%;
-  height: 1px;
-  background-color: var(--secondarycolor);
-  opacity: 20%;
-  margin-top: 5px;
-  margin-bottom: 7px;
+  opacity: 0.8;
 }
 
 .languageinfo {
@@ -481,6 +483,7 @@ height: 100%;
   width: 50px;
 }
 .languagedes {
+  
   line-height: 0.3;
   margin-left: 10px;
 }
@@ -498,6 +501,9 @@ height: 100%;
   color: var(--secondarycolor);
   margin-top: 4%;
   align-self: flex-start;
+}
+#swiftpadding{
+  margin-bottom: 3%;
 }
 #cpluspluslogoproject{
   width:40px;
@@ -545,18 +551,22 @@ height: 100%;
   border-radius: 35px;
 }
 .bluedownloadbutton:hover{
-  background-color: var(--maincolor);
-  color:var(--interfacecolor);
+  opacity: 0.8;
 }
-.emailme{
-  color:var(--secondarycolor);
+.touchtext{
+  color: var(--coolgreen);
+  font-size: 48px;
+  font-weight: 700;
+ 
+  padding-top: 9px;
+  padding-bottom: 9px;
+  padding-left: 5%;
+  padding-right: 5%;
   text-decoration: none;
-  font-size: 20px;
+  border-radius: 20px;
   transition:0.4s;
-}
-.emailme:hover{
-  color:var(--coolgreen);
-  cursor: default;
+  margin-top: 0px;
+  margin-bottom: 0px;
 }
 .whitedownloadbutton{
   color: var(--maincolor);
@@ -573,9 +583,7 @@ height: 100%;
   box-shadow: 0px 0px 2px 0px rgba(0,0,0,0.75);
 }
 .whitedownloadbutton:hover{
-  background-color: var(--maincolor);
-  color:var(--interfacecolor);
-
+  opacity: 0.6;
 }
 .seperator{
   height:5px;
@@ -610,7 +618,12 @@ html.transition *:after {
   transition: all 600ms !important;
   transition-delay: 0 !important;
 }
-
+@media only screen and (max-width: 900px) {
+  .notificationcontainer {
+    margin-top: -70px;
+    justify-content: center;
+  }
+}
 @media only screen and (max-width: 810px) {
   h1 {
     font-size: 3rem;
@@ -742,7 +755,13 @@ html.transition *:after {
 .bluedownloadbutton{
   border-radius: 30px;
   font-size: 25px;
-  margin-bottom: -30px;
+  margin-top: -20px;
+  margin-bottom: -10px;
+}
+.touchtext{
+  margin-top: 40px;
+  margin-bottom: 10px;
+  font-size: 6vw;
 }
 .whitedownloadbutton{
   border-radius: 30px;
