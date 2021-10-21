@@ -1,28 +1,27 @@
-html{
-
---maincolor:#000000;
---secondarycolor:#7b7b7b;
---interfacecolor:#ffffff;
---callgray:#fafafa;
---coolblue:#007aff;
---coolgreen:#34c759;
---secondarylight:#E5E5E5;
---navblur:rgba(255, 255, 255, 0.4);
+html {
+  --maincolor: #000000;
+  --secondarycolor: #7b7b7b;
+  --interfacecolor: #ffffff;
+  --callgray: #fafafa;
+  --coolblue: #007aff;
+  --coolgreen: #34c759;
+  --secondarylight: #e5e5e5;
+  --navblur: rgba(255, 255, 255, 0.4);
 }
-html[data-theme = 'dark']{
-  --maincolor:#ffffff;
---secondarycolor:#ababab;
---interfacecolor:#000000;
---callgray:#1d1d1d;
---coolblue:#007aff;
---coolgreen:#34c759;
---secondarylight:#242424;
---navblur:rgba(0, 0, 0, 0.4);
+html[data-theme="dark"] {
+  --maincolor: #ffffff;
+  --secondarycolor: #ababab;
+  --interfacecolor: #000000;
+  --callgray: #1d1d1d;
+  --coolblue: #007aff;
+  --coolgreen: #34c759;
+  --secondarylight: #242424;
+  --navblur: rgba(0, 0, 0, 0.4);
 }
 body {
   font-family: -apple-system, BlinkMacSystemFont, Helvetica Neue, Helvetica,
     sans-serif;
-    background-color: var(--interfacecolor);
+  background-color: var(--interfacecolor);
 }
 
 h1 {
@@ -30,7 +29,7 @@ h1 {
   color: var(--maincolor);
   transition: 0.4s;
 }
-h1:hover{
+h1:hover {
   opacity: 0.7;
 }
 h2 {
@@ -39,7 +38,7 @@ h2 {
   font-weight: normal;
   transition: 0.4s;
 }
-h2:hover{
+h2:hover {
   color: var(--coolblue);
 }
 h3 {
@@ -47,8 +46,7 @@ h3 {
   font-size: 2.45vw;
 }
 
-svg
-{
+svg {
   fill: green;
 }
 
@@ -96,63 +94,53 @@ svg
   color: white;
   text-decoration: none;
 }
-.togglecontainer{
+.togglecontainer {
   display: flex;
   margin-left: -10%;
   margin-top: 1%;
 }
-#sunicon
-{
-  width:30%;
+#sunicon {
+  width: 30%;
   margin-left: -10%;
   margin-right: 15%;
 }
-input[type=checkbox]{
-
-	height: 0;
-	width: 0;
-	visibility: hidden;
-  
+input[type="checkbox"] {
+  height: 0;
+  width: 0;
+  visibility: hidden;
 }
 
 label {
   margin-top: 1.5%;
-	cursor: pointer;
-	text-indent: -9999px;
-	width: 45px;
-	height: 25px;
-	background: grey;
-	display: block;
-	border-radius: 25px;
-	position: relative;
-
-  
+  cursor: pointer;
+  text-indent: -9999px;
+  width: 45px;
+  height: 25px;
+  background: grey;
+  display: block;
+  border-radius: 25px;
+  position: relative;
 }
 
 label:after {
-	content: '';
-	position: absolute;
-	top: 1px;
-	left: 1.5px;
-	width: 23px;
-	height: 23px;
-	background: #fff;
-	border-radius: 23px;
-box-shadow: 0px 0.5px 2px 0px rgba(0,0,0,0.75);
+  content: "";
+  position: absolute;
+  top: 1px;
+  left: 1.5px;
+  width: 23px;
+  height: 23px;
+  background: #fff;
+  border-radius: 23px;
+  box-shadow: 0px 0.5px 2px 0px rgba(0, 0, 0, 0.75);
 }
 
 input:checked + label {
-  
-	background: var(--coolgreen);
+  background: var(--coolgreen);
 }
 
 input:checked + label:after {
-	left: calc(45%);
-  
+  left: calc(45%);
 }
-
-
-
 
 .intro {
   margin-top: 4.5%;
@@ -245,7 +233,6 @@ input:checked + label:after {
 
 .socialbutton:hover {
   opacity: 0.7;
- 
 }
 
 .dock {
@@ -397,8 +384,8 @@ input:checked + label:after {
 .notification:hover {
   background-color: var(--interfacecolor);
 }
-#projectheader{
-  margin-top:5.5%;
+#projectheader {
+  margin-top: 5.5%;
 }
 .projectcontainer {
   display: flex;
@@ -426,11 +413,11 @@ input:checked + label:after {
   border-top-left-radius: 34px;
   border-top-right-radius: 34px;
 }
-#prokioskimage{
-height: 100%;
+#prokioskimage {
+  height: 100%;
   object-fit: cover;
 }
-#dsalgoimage{
+#dsalgoimage {
   height: 59%;
   object-fit: cover;
 }
@@ -447,14 +434,13 @@ height: 100%;
 .projectname {
   font-weight: bold;
   font-size: 22px;
-  color:var(--maincolor);
+  color: var(--maincolor);
 }
 .projectdes {
   color: var(--secondarycolor);
   font-size: 12px;
   font-weight: 600;
   margin-top: -8%;
-
 }
 
 .projectbutton {
@@ -483,7 +469,6 @@ height: 100%;
   width: 50px;
 }
 .languagedes {
-  
   line-height: 0.3;
   margin-left: 10px;
 }
@@ -502,27 +487,27 @@ height: 100%;
   margin-top: 4%;
   align-self: flex-start;
 }
-#swiftpadding{
+#swiftpadding {
   margin-bottom: 3%;
 }
-#cpluspluslogoproject{
-  width:40px;
+#cpluspluslogoproject {
+  width: 40px;
   height: 40px;
   border-radius: 10px;
   background-color: white;
 }
-.downloadcontainer{
+.downloadcontainer {
   display: flex;
   flex-direction: column;
   align-items: center;
   row-gap: 30px;
 }
-.graymarker{
+.graymarker {
   background-color: var(--navblur);
-  color:var(--secondarycolor);
+  color: var(--secondarycolor);
 }
 
-.optext{
+.optext {
   color: var(--secondarycolor);
   background-color: var(--secondarylight);
   padding-top: 9px;
@@ -531,14 +516,14 @@ height: 100%;
   padding-right: 15%;
   text-decoration: none;
   border-radius: 10px;
-  transition:0.4s;
+  transition: 0.4s;
 }
-.optext:hover{
+.optext:hover {
   background-color: var(--coolgreen);
-  color:green;
+  color: green;
   cursor: default;
 }
-.bluedownloadbutton{
+.bluedownloadbutton {
   color: white;
   font-size: 35px;
   background-color: var(--coolblue);
@@ -550,25 +535,25 @@ height: 100%;
   transition: 0.4s;
   border-radius: 35px;
 }
-.bluedownloadbutton:hover{
+.bluedownloadbutton:hover {
   opacity: 0.8;
 }
-.touchtext{
+.touchtext {
   color: var(--coolgreen);
   font-size: 48px;
   font-weight: 700;
- 
+
   padding-top: 9px;
   padding-bottom: 9px;
   padding-left: 5%;
   padding-right: 5%;
   text-decoration: none;
   border-radius: 20px;
-  transition:0.4s;
+  transition: 0.4s;
   margin-top: 0px;
   margin-bottom: 0px;
 }
-.whitedownloadbutton{
+.whitedownloadbutton {
   color: var(--maincolor);
   font-size: 35px;
   background-color: var(--callgray);
@@ -580,33 +565,31 @@ height: 100%;
   transition: 0.4s;
   border-radius: 35px;
 
-  box-shadow: 0px 0px 2px 0px rgba(0,0,0,0.75);
+  box-shadow: 0px 0px 2px 0px rgba(0, 0, 0, 0.75);
 }
-.whitedownloadbutton:hover{
+.whitedownloadbutton:hover {
   opacity: 0.6;
 }
-.seperator{
-  height:5px;
+.seperator {
+  height: 5px;
   width: 100%;
   background-color: var(--secondarylight);
   margin-top: 25px;
   border-radius: 20px;
 }
-.footermain{
+.footermain {
   margin-top: -6%;
   margin-left: 7%;
   margin-right: 7%;
   display: flex;
   justify-content: space-between;
 }
-.footeritem
-{
+.footeritem {
   font-size: 25px;
   color: var(--secondarycolor);
-  transition:0.4s;
+  transition: 0.4s;
 }
-.footeritem:hover
-{
+.footeritem:hover {
   color: var(--maincolor);
   cursor: default;
 }
@@ -628,32 +611,32 @@ html.transition *:after {
   h1 {
     font-size: 3rem;
   }
-  h2{
+  h2 {
     font-size: 1.5rem;
   }
-  h3{
+  h3 {
     font-size: 4vw;
   }
-  .headermain{
+  .headermain {
     margin-left: -2%;
   }
-  .headeritem{
-    display:none;
+  .headeritem {
+    display: none;
     padding-top: 14px;
     padding-bottom: 14px;
     padding-left: 9px;
     padding-right: 9px;
   }
-  .headername{
+  .headername {
     font-size: 4vw;
-    display:block;
+    display: block;
     width: 60%;
     margin-left: 5%;
   }
-  .intro{
+  .intro {
     margin-top: 30%;
   }
-  #welcometext{
+  #welcometext {
     font-size: 3.8rem;
   }
   .memoji {
@@ -682,17 +665,17 @@ html.transition *:after {
 
   .socialhandle {
     width: 255px;
-  height: 70px;
+    height: 70px;
   }
   .dock {
     background-color: var(--interfacecolor);
     padding-top: 20px;
-  padding-bottom: 20px;
-  padding-left: 0px;
-  padding-right: 0px;
-  margin-left: -30px;
-  margin-right: -30px;
-  margin-top: -50px;
+    padding-bottom: 20px;
+    padding-left: 0px;
+    padding-right: 0px;
+    margin-left: -30px;
+    margin-right: -30px;
+    margin-top: -50px;
   }
   .dockicon {
     display: flex;
@@ -715,66 +698,64 @@ html.transition *:after {
   .dockseper {
     display: none;
   }
- 
-.notificationcontainer {
-  margin-top: -70px;
-  justify-content: center;
-}
-.notification{
-  width:100%;
-  height: 40%;
-}
-.skillicon {
-  width: 40px;
-  margin-right: 10px;
-}
-.skillname {
-  font-size: 3.6vw;
-}
-.skilldetail{
-  font-size: 3vw;
-}
-.skillprogress {
-  margin-top: 2.75%;
-  font-size: 3vw;
-}
-#jsimage {
-  width: 33px;
-  margin-left: 3px;
-}
-#leetimage {
-  width: 33px;
-  margin-left:3px;
-}
-#sfimage {
-  width: 33px
-}
-.projectcontainer {
-  justify-content: center;
-}
-.bluedownloadbutton{
-  border-radius: 30px;
-  font-size: 25px;
-  margin-top: -20px;
-  margin-bottom: -10px;
-}
-.touchtext{
-  margin-top: 40px;
-  margin-bottom: 10px;
-  font-size: 6vw;
-}
-.whitedownloadbutton{
-  border-radius: 30px;
-  font-size: 25px;
-  margin-top: -30px;
-}
-.seperator{
-  height:3px;
-  margin-top: 25px;
 
-}
-.footeritem
-{
-  font-size: 10px;
-}
+  .notificationcontainer {
+    margin-top: -70px;
+    justify-content: center;
+  }
+  .notification {
+    width: 100%;
+    height: 40%;
+  }
+  .skillicon {
+    width: 40px;
+    margin-right: 10px;
+  }
+  .skillname {
+    font-size: 3.6vw;
+  }
+  .skilldetail {
+    font-size: 3vw;
+  }
+  .skillprogress {
+    margin-top: 2.75%;
+    font-size: 3vw;
+  }
+  #jsimage {
+    width: 33px;
+    margin-left: 3px;
+  }
+  #leetimage {
+    width: 33px;
+    margin-left: 3px;
+  }
+  #sfimage {
+    width: 33px;
+  }
+  .projectcontainer {
+    justify-content: center;
+  }
+  .bluedownloadbutton {
+    border-radius: 30px;
+    font-size: 25px;
+    margin-top: -20px;
+    margin-bottom: -10px;
+  }
+  .touchtext {
+    margin-top: 40px;
+    margin-bottom: 10px;
+    font-size: 6vw;
+  }
+  .whitedownloadbutton {
+    border-radius: 30px;
+    font-size: 25px;
+    margin-top: -30px;
+  }
+  .seperator {
+    height: 3px;
+    margin-top: 25px;
+  }
+  .footeritem {
+    font-size: 10px;
+  }
 }

@@ -1,23 +1,23 @@
 html {
-  --maincolor:#000000;
-  --secondarycolor:#7b7b7b;
-  --interfacecolor:#ffffff;
-  --callgray:#fafafa;
-  --coolblue:#007aff;
-  --coolgreen:#34c759;
-  --secondarylight:#E5E5E5;
-  --navblur:rgba(255, 255, 255, 0.4);
+  --maincolor: #000000;
+  --secondarycolor: #7b7b7b;
+  --interfacecolor: #ffffff;
+  --callgray: #fafafa;
+  --coolblue: #007aff;
+  --coolgreen: #34c759;
+  --secondarylight: #e5e5e5;
+  --navblur: rgba(255, 255, 255, 0.4);
 }
 
-html[data-theme='dark'] {
-  --maincolor:#ffffff;
-  --secondarycolor:#ababab;
-  --interfacecolor:#000000;
-  --callgray:#1d1d1d;
-  --coolblue:#007aff;
-  --coolgreen:#34c759;
-  --secondarylight:#242424;
-  --navblur:rgba(0, 0, 0, 0.4);
+html[data-theme="dark"] {
+  --maincolor: #ffffff;
+  --secondarycolor: #ababab;
+  --interfacecolor: #000000;
+  --callgray: #1d1d1d;
+  --coolblue: #007aff;
+  --coolgreen: #34c759;
+  --secondarylight: #242424;
+  --navblur: rgba(0, 0, 0, 0.4);
 }
 
 body {
@@ -132,7 +132,7 @@ svg {
   margin-right: 15%;
 }
 
-input[type=checkbox] {
+input[type="checkbox"] {
   height: 0;
   width: 0;
   visibility: hidden;
@@ -151,7 +151,7 @@ label {
 }
 
 label:after {
-  content: '';
+  content: "";
   position: absolute;
   top: 1px;
   left: 1.5px;
